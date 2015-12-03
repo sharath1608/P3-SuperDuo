@@ -15,7 +15,7 @@
     <string name="book_cover">Bookcover</string>
 
     <string name="ok_button">Next</string>
-    <string name="cancel_button">Cancel</string>
+    <string name="cancel_button">Delete</string>
     <string name="not_found">No Book found</string>
     <string name="search">Search</string>
     <string name="delete">Delete Book</string>
@@ -36,26 +36,18 @@
     <string name="client_status_down">Could not connect to the server. Please check your connection settings</string>
     <string name="error">Error</string>
 
-    <string name="fetch_book_action">
-        <xliff:g id="fetch_book_action">it.jaschke.alexandria.services.action.FETCH_BOOK</xliff:g>
-    </string>
+    <string name="fetch_book_action" translatable="false">it.jaschke.alexandria.services.action.FETCH_BOOK</string>
 
-    <string name="delete_book_action">
-        <xliff:g id="delete_book_action">it.jaschke.alexandria.services.action.DELETE_BOOK</xliff:g>
-    </string>
+    <string name="delete_book_action" translatable="false">it.jaschke.alexandria.services.action.DELETE_BOOK</string>
 
-    <string name="base_uri">
-        <xliff:g id="base_uri">https://www.googleapis.com/books/v1/volumes?</xliff:g>
-    </string>
+    <string name="base_uri" translatable="false">https://www.googleapis.com/books/v1/volumes?</string>
 
-    <string name="ean_action">
-        <xliff:g id="ean_action">it.jaschke.alexandria.services.extra.EAN</xliff:g>
-    </string>
+    <string name="ean_action" translatable="false">it.jaschke.alexandria.services.extra.EAN</string>
+
+    <string name="ean_content">eanContent</string>
 
     <string name="isbn_prefix">978</string>
-    <string name="pref_connectivity_key">
-        <xliff:g id="prefConnectKey">prefConnectKey</xliff:g>
-    </string>
+    <string name="pref_connectivity_key" translatable="false">prefConnectKey</string>
 <!-- TODO: Remove or change this placeholder text -->
     <string name="about_text">This application gets book information from a Google API. All titles, cover images, and author information come from there.
     The original version of this app was built by Sascha Jaschke, and a modified version is given to students in the Udacity Android Nanodegree program. </string>

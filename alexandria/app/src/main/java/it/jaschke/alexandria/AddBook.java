@@ -31,12 +31,11 @@ import it.jaschke.alexandria.services.DownloadImage;
 
 
 public class AddBook extends Fragment implements LoaderManager.LoaderCallbacks<Cursor>,SharedPreferences.OnSharedPreferenceChangeListener {
-    private static final String TAG = "INTENT_TO_SCAN_ACTIVITY";
     private EditText ean;
     private final int LOADER_ID = 1;
     private String toastString;
     private View rootView;
-    private final String EAN_CONTENT="eanContent";
+    private String eanContent;
     private static final int SCAN_IMAGE_REQUEST = 1;
 
     private Button deleteButton;
@@ -47,7 +46,6 @@ public class AddBook extends Fragment implements LoaderManager.LoaderCallbacks<C
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String s) {
         clearFields();
-        Log.v(getClass().getSimpleName(), "Inside onsharedpreferences changed");
         @BookService.ConnectionStatus int networkStatus = sharedPreferences.getInt(getString(R.string.pref_connectivity_key),0);
         switch (networkStatus) {
             case BookService.SERVER_STATUS_DOWN:
@@ -68,7 +66,7 @@ public class AddBook extends Fragment implements LoaderManager.LoaderCallbacks<C
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         if(ean!=null) {
-            outState.putString(EAN_CONTENT, ean.getText().toString());
+            outState.putString(eanContent, ean.getText().toString());
         }
     }
 
@@ -90,7 +88,7 @@ public class AddBook extends Fragment implements LoaderManager.LoaderCallbacks<C
         rootView = inflater.inflate(R.layout.fragment_add_book, container, false);
         deleteButton = (Button)rootView.findViewById(R.id.delete_button);
         saveButton = (Button)rootView.findViewById(R.id.save_button);
-
+        eanContent = getString(R.string.ean_content);
         ean = (EditText) rootView.findViewById(R.id.ean);
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
         ean.addTextChangedListener(new TextWatcher() {
@@ -160,7 +158,7 @@ public class AddBook extends Fragment implements LoaderManager.LoaderCallbacks<C
         });
 
         if(savedInstanceState!=null){
-            ean.setText(savedInstanceState.getString(EAN_CONTENT));
+            ean.setText(savedInstanceState.getString(eanContent));
             ean.setHint("");
         }
 
@@ -182,7 +180,6 @@ public class AddBook extends Fragment implements LoaderManager.LoaderCallbacks<C
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        Log.v(getClass().getSimpleName(), "Result from Scan activity" + String.valueOf(requestCode) + "," + String.valueOf(resultCode));
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == SCAN_IMAGE_REQUEST){
             if(resultCode == BasicScannerActivity.SCAN_OK){
