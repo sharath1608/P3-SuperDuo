@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">
+        <xliff:g id="application_name">Football Scores</xliff:g>
+    </string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- Tag names to display adjacent days for View Pager -->
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="tomorrow">Tomorrow</string>
+
+    <!-- Known leagues to display on detail fragment container -->
+    <string name="champions_league">
+        <xliff:g id="UEFA_league_name">UEFA Champions League</xliff:g>
+    </string>
+    <string name="bundesliga">
+        <xliff:g id="Bundesliga_league_name">Bundesliga</xliff:g>
+    </string>
+    <string name="premierleague">
+        <xliff:g  id="Premier_league_name">Premier League</xliff:g>
+    </string>
+    <string name="primeradivison">
+        <xliff:g id="Primera_division_league_name">Primera Division</xliff:g>
+    </string>
+    <string name="seriaa">
+        <xliff:g id="SerieA_league_name">"Serie A</xliff:g>
+    </string>
+    <string name="unknown_league">Unknown league.</string>
+
+    <!-- Stage names, content descriptions and view tags-->
+    <string name="matchday_text">Match day</string>
+    <string name="group_stage_text">Group stages</string>
+    <string name="first_knockout_round">First knockout round</string>
+    <string name="quarter_final">Quarter Final</string>
+    <string name="semi_final">Semi Final</string>
+    <string name="final_text">Final</string>
+    <string name="share_text">Share</string>
+    <string name="empty_list">Empty List</string>
+    <string name="about">About</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="home_team_image">Home team image</string>
+    <string name="about_text">
+        This Application get Football Matches Score for the Premier League,Seria A,Bundesliga,Primera Division
+        and the Uefa Champions League.
+        All Matches data are acquired from football-data.org free API.
+        All team Logos are acquired from http://hdlogo.wordpress.com/ upon requesting permission form the owner.
+        The original version of this app was created by Yahia Khalid Ibn El Walid Ahmed, and a modified version is given to students in the Udacity Android Nanodegree program.
+        To report any bugs,or suggestions do not hesitate to send a mail to y.k.ibnelwalid@gmail.com.
+
+        During the off season, fake data will be added to the app.
+    </string>
+    <string name="api_key">
+        <xliff:g id="api_key"></xliff:g>
+    </string>
+    <string name="message_hashtag">
+        <xliff:g id="hashtag">#Football_Scores</xliff:g>
+    </string>
+
+    <!-- Strings that store base urls-->
+    <string name="season_link">
+        <xliff:g id="season_url">http://api.football-data.org/alpha/soccerseasons/</xliff:g>
+    </string>
+    <string name="match_link">
+        <xliff:g id="match_url">"http://api.football-data.org/alpha/fixtures/</xliff:g>
+    </string>
+    <string name="base_url">
+        <xliff:g id="base_url">http://api.football-data.org/alpha/fixtures</xliff:g>
+    </string>
+
+    <!-- match codes -->
+    <string name="bundesliga_1_code">
+        <xliff:g id="bundesliga_code">"394</xliff:g>
+    </string>
+    <string name="bundesliga_2_code">
+        <xliff:g id="bundesliga_2_code">395</xliff:g>
+    </string>
+    <string name="ligue_1_code">
+        <xliff:g id="ligue_1_code">396</xliff:g>
+    </string>
+    <string name="ligue_2_code">
+        <xliff:g id="ligue_2_code">397></xliff:g>
+    </string>
+    <string name="premier_league_code">
+        <xliff:g id="premier_code">398</xliff:g>
+    </string>
+    <string name="primera_division_code">
+        <xliff:g id="primera_code">399</xliff:g>
+    </string>
+    <string name="segunda_division_code">
+        <xliff:g id="segunda_code">400</xliff:g>
+    </string>
+    <string name="serie_A_code">
+        <xliff:g id="serieA_code">401</xliff:g>
+    </string>
+    <string name="primera_liga_code">
+        <xliff:g id = "primera_liga_code">402</xliff:g>
+    </string>
+    <string name="bundesliga_3_code">
+        <xliff:g id="bundesliga_3_code">403</xliff:g>
+    </string>
+    <string name="eredivisie_code">
+        <xliff:g id="eredivisie_code">404</xliff:g>
+    </string>
+
+    <!-- Leagues codes for identifying response code from JSON-->
+    <string-array name="league_codes">
+        <item>@string/bundesliga_1_code</item>
+        <item>@string/bundesliga_2_code</item>
+        <item>@string/ligue_1_code</item>
+        <item>@string/ligue_2_code</item>
+        <item>@string/premier_league_code</item>
+        <item>@string/primera_division_code</item>
+        <item>@string/segunda_division_code</item>
+        <item>@string/primera_liga_code</item>
+        <item>@string/bundesliga_3_code</item>
+        <item>@string/serie_A_code</item>
+        <item>@string/eredivisie_code</item>
+    </string-array>
+
+    <string name="football_string">Football</string>
+    <string name="scores_string">Scores</string>
+
+    <!-- Team names used for retrieving images from drawable -->
+    <string name="arsenal">
+        <xliff:g id="arsenal_name">Arsenal London FC</xliff:g>
+    </string>
+    <string name="mufc">
+        <xliff:g id="man_utd_name">Manchester United FC</xliff:g>
+    </string>
+     <string name="swansea">
+        <xliff:g id="swansea_name">Swansea City</xliff:g>
+    </string>
+    <string name="leicester">
+        <xliff:g id="leicester_name">Leicester City</xliff:g>
+    </string>
+    <string name="everton">
+        <xliff:g id="everton_name">Everton FC</xliff:g>
+    </string>
+
+
+    <!-- Tags for parsing JSON response -->
+    <string name="fixture_tag">
+        <xliff:g id="fixture_tag">fixtures</xliff:g>
+    </string>
+    <string name="links_tag">
+        <xliff:g id="links_tag">_links</xliff:g>
+    </string>
+    <string name="soccerseason_tag">
+        <xliff:g id= "soccerseason_tag">soccerseason</xliff:g>
+    </string>
+    <string name="self_tag">
+        <xliff:g id="self_tag">self</xliff:g>
+    </string>
+    <string name="home_team_tag">
+        <xliff:g id="home_team_tag">homeTeamName</xliff:g>
+    </string>
+    <string name="date_tag">
+        <xliff:g id="date_tag">date</xliff:g>
+    </string>
+    <string name="away_team_tag">
+        <xliff:g id="away_team_tag">awayTeamName</xliff:g>
+    </string>
+    <string name="goals_away_team_tag">
+        <xliff:g id="goals_away_tag">goalsAwayTeam</xliff:g>
+    </string>
+    <string name="goals_home_team_tag">
+        <xliff:g id="goals_home_tag">goalsHomeTeam</xliff:g>
+    </string>
+    <string name="result_tag">
+        <xliff:g id="result_tag">result</xliff:g>
+    </string>
+    <string name="match_day_tag">
+        <xliff:g id="match_day_tag">matchday</xliff:g>
+    </string>
+    <string name="fixture_n">
+        <xliff:g id="fixture_n">n4</xliff:g>
+    </string>
+    <string name="fixture_p">
+        <xliff:g id="fixture_p">p4</xliff:g>
+    </string>
+
+    <!-- Pattern used to parse date using Joda Time -->
+    <string name="date_patter_1">
+        <xliff:g id="date_pattern_1" example="2015-11-25'T'09:30:00'Z'">"yyyy-MM-dd\'T\'HH:mm:ss\'Z\'</xliff:g>
+    </string>
+    <string name="date_pattern_2">
+        <xliff:g id="date_pattern_2" example="2015-11-25">yyyy-MM-dd</xliff:g>
+    </string>
+
+    <string name="share_button_desc">share button to share the match</string>
+    <string name="away_team_image">Away team image</string>
+
+    <!-- dummy data used in myFetchService to display during the off-season-->
+    <string name="dummy_data">
+        <xliff:g id="dummy_data">{\"timeFrameStart\":\"2015-06-18\",\"timeFrameEnd\":\"2015-06-19\",\"count\":1,\"fixtures\":[{\"_links\":{\"self\":{\"href\":\"http://api.football-data.org/alpha/fixtures/140514\"},\"soccerseason\":{\"href\":\"http://api.football-data.org/alpha/soccerseasons/357\"},\"homeTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/275\"},\"awayTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/263\"}},\"date\":\"2015-06-19T22:00:00Z\",\"status\":\"FINISHED\",\"matchday\":42,\"homeTeamName\":\"TESTING1\",\"awayTeamName\":\"TESTING2\",\"result\":{\"goalsHomeTeam\":2,\"goalsAwayTeam\":4}},{\"_links\":{\"self\":{\"href\":\"http://api.football-data.org/alpha/fixtures/140514\"},\"soccerseason\":{\"href\":\"http://api.football-data.org/alpha/soccerseasons/357\"},\"homeTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/275\"},\"awayTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/263\"}},\"date\":\"2015-06-19T22:00:00Z\",\"status\":\"FINISHED\",\"matchday\":42,\"homeTeamName\":\"TESTING1\",\"awayTeamName\":\"TESTING2\",\"result\":{\"goalsHomeTeam\":2,\"goalsAwayTeam\":4}},{\"_links\":{\"self\":{\"href\":\"http://api.football-data.org/alpha/fixtures/140514\"},\"soccerseason\":{\"href\":\"http://api.football-data.org/alpha/soccerseasons/357\"},\"homeTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/275\"},\"awayTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/263\"}},\"date\":\"2015-06-19T22:00:00Z\",\"status\":\"FINISHED\",\"matchday\":42,\"homeTeamName\":\"TESTING1\",\"awayTeamName\":\"TESTING2\",\"result\":{\"goalsHomeTeam\":2,\"goalsAwayTeam\":4}},{\"_links\":{\"self\":{\"href\":\"http://api.football-data.org/alpha/fixtures/140514\"},\"soccerseason\":{\"href\":\"http://api.football-data.org/alpha/soccerseasons/357\"},\"homeTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/275\"},\"awayTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/263\"}},\"date\":\"2015-06-19T22:00:00Z\",\"status\":\"FINISHED\",\"matchday\":42,\"homeTeamName\":\"TESTING1\",\"awayTeamName\":\"TESTING2\",\"result\":{\"goalsHomeTeam\":2,\"goalsAwayTeam\":4}},{\"_links\":{\"self\":{\"href\":\"http://api.football-data.org/alpha/fixtures/140514\"},\"soccerseason\":{\"href\":\"http://api.football-data.org/alpha/soccerseasons/357\"},\"homeTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/275\"},\"awayTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/263\"}},\"date\":\"2015-06-19T22:00:00Z\",\"status\":\"FINISHED\",\"matchday\":42,\"homeTeamName\":\"TESTING1\",\"awayTeamName\":\"TESTING2\",\"result\":{\"goalsHomeTeam\":2,\"goalsAwayTeam\":4}}]}</xliff:g>
+    </string>
+</resources>
