@@ -27,7 +27,8 @@
                 android:maxLength="@integer/ean_size"
                 android:maxLines="1"
                 android:hint="@string/input_hint"
-                android:paddingRight="20dp"/>
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -46,6 +47,8 @@
             android:textStyle="bold"
             android:layout_marginTop="25dp"
             android:paddingRight="20dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
             android:layout_below="@+id/eancontainer"
             android:layout_alignLeft="@+id/eancontainer"
             android:layout_alignStart="@+id/eancontainer"/>
@@ -59,7 +62,7 @@
             android:maxLines="3"
             android:ellipsize="end"
             android:layout_alignLeft="@+id/eancontainer"
-            />
+            android:layout_alignStart="@+id/eancontainer"/>
 
         <TextView
             android:layout_width="wrap_content"

@@ -49,8 +49,6 @@
                   android:layout_toRightOf="@id/searchButton"
                   android:layout_toEndOf="@id/searchButton"/>
 
-
-
     </RelativeLayout>
 
 </FrameLayout>
